@@ -1,0 +1,39 @@
+# Build artifacts
+build/
+cmake-cache/
+*.o
+*.so
+*.a
+*.obj
+*.exe
+
+# ns-3 build outputs (if the full ns-3-dev tree is ever added locally)
+ns-3-dev/build/
+ns-3-dev/cmake-cache/
+ns-3-dev/.lock-ns3*
+ns-3-dev/.waf*
+
+# Logs / temp files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# MATLAB
+*.asv
+*.m~
+slprj/
+
+# Large pcap traces (re-generate via --enablePcap=true if needed)
+*.pcap

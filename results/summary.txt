@@ -1,0 +1,13 @@
+5G MEC vs Cloud — AR/VR Performance Summary
+==================================================
+
+MEC average delay   : 2.108 ms
+Cloud average delay : 36.236 ms
+Latency reduction   : 34.128 ms (94.18% lower with MEC)
+
+MEC throughput      : 20.463 Mbps
+Cloud throughput    : 20.386 Mbps
+Throughput gain     : 0.38% with MEC
+
+MEC packet loss     : 0.000%
+Cloud packet loss   : 0.000%

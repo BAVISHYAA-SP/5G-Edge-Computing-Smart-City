@@ -1,0 +1,3 @@
+Path,avg_delay_ms,throughput_mbps,packet_loss_percent,tx_packets,rx_packets,lost_packets
+MEC,2.1082,20.463,0.0,18750,18750,0
+CLOUD,36.2362,20.3857,0.0,18750,18750,0
