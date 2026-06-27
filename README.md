@@ -147,14 +147,30 @@ benefit MEC is designed to deliver for delay-sensitive applications.
 > throughput or reliability — see [Limitations](#limitations--future-work) for what
 > a fuller study would add.
 
-## Screenshots
+**Python-generated graphs** (from `python/analysis.py`):
 
 | | |
 |---|---|
 | ![Latency comparison](results/latency.png) | ![Throughput comparison](results/throughput.png) |
 | ![Packet loss comparison](results/packet_loss.png) | ![Combined summary](results/comparison.png) |
 
-NetAnim animation and terminal output screenshots: see [`screenshots/`](screenshots/).
+## Screenshots
+
+**MATLAB validation output** — confirms the Python-derived numbers independently:
+
+![MATLAB validation summary](screenshots/matlab_validation_summary.png)
+![MATLAB final validation](screenshots/matlab_final_validation.png)
+
+**NetAnim animation** — visualizing the UE → gNB → MEC/Cloud topology and live packet flow:
+
+![NetAnim animation 1](screenshots/netanim_animation_1.png)
+![NetAnim animation 2](screenshots/netanim_animation_2.png)
+
+**NetAnim packet trace** — per-packet view (Packets tab) showing UDP flows to both the MEC port (5000) and Cloud port (6000):
+
+![NetAnim packets table](screenshots/netanim_packets_table.png)
+
+(Python-generated result graphs are embedded above in the [Results](#results) section.)
 
 ## How to Run
 
@@ -240,11 +256,11 @@ netanim mec_arvr_final.xml
 │   ├── matlab_*.png / matlab_summary.csv / matlab_stats_summary.txt
 │   └── summary.txt
 │
-├── screenshots/
-│   └── (NetAnim, terminal output, graph screenshots)
-│
-└── docs/
-    └── (project report / presentation, if included)
+└── screenshots/
+    ├── matlab_validation_summary.png
+    ├── matlab_final_validation.png
+    ├── netanim_animation_1.png / netanim_animation_2.png
+    └── netanim_packets_table.png
 ```
 
 ## Limitations & Future Work
@@ -266,7 +282,7 @@ generated `matlab_stats_summary.txt`. Planned extensions:
 
 ## Contributors
 
-- *Add your name(s) here*
+- Bavishyaa S P
 
 ---
 
